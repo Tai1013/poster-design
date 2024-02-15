@@ -4,6 +4,8 @@ specifiers:
   '@element-plus/icons-vue': ^2.3.1
   '@vitejs/plugin-vue': ^5.0.3
   element-plus: ^2.5.5
+  pinia: ^2.1.7
+  pinia-plugin-persistedstate-2: ^2.0.14
   typescript: ^5.2.2
   vite: ^5.1.0
   vue: ^3.4.15
@@ -12,6 +14,8 @@ specifiers:
 dependencies:
   '@element-plus/icons-vue': 2.3.1_vue@3.4.19
   element-plus: 2.5.5_vue@3.4.19
+  pinia: 2.1.7_kn7nw36bcvznkcpxy3k3ah4noi
+  pinia-plugin-persistedstate-2: 2.0.14_pinia@2.1.7
   vue: 3.4.19_typescript@5.3.3
 
 devDependencies:
@@ -475,6 +479,10 @@ packages:
       '@vue/compiler-dom': 3.4.19
       '@vue/shared': 3.4.19
 
+  /@vue/devtools-api/6.5.1:
+    resolution: {integrity: sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==}
+    dev: false
+
   /@vue/language-core/1.8.27_typescript@5.3.3:
     resolution: {integrity: sha512-L8Kc27VdQserNaCUNiSFdDl9LWT24ly8Hpwf1ECy3aFb9m6bDhBGQYOujDm21N7EW3moKIOKEanQwe1q5BK+mA==}
     peerDependencies:
@@ -723,6 +731,33 @@ packages:
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
+  /pinia-plugin-persistedstate-2/2.0.14_pinia@2.1.7:
+    resolution: {integrity: sha512-IsBTVhzaaJWm3woUPezW6cZYVkXML2PqTzBwGn9yfvSq4zc+jHAdBLfaOr7uOdIrVMMA12dLClrb6FBI4x6Zzw==}
+    peerDependencies:
+      pinia: ^2
+    dependencies:
+      pinia: 2.1.7_kn7nw36bcvznkcpxy3k3ah4noi
+      shvl: 3.0.0
+    dev: false
+
+  /pinia/2.1.7_kn7nw36bcvznkcpxy3k3ah4noi:
+    resolution: {integrity: sha512-+C2AHFtcFqjPih0zpYuvof37SFxMQ7OEG2zV9jRI12i9BOy3YQVAHwdKtyyc8pDcDyIc33WCIsZaCFWU7WWxGQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.3.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.5.1
+      typescript: 5.3.3
+      vue: 3.4.19_typescript@5.3.3
+      vue-demi: 0.14.7_vue@3.4.19
+    dev: false
+
   /postcss/8.4.35:
     resolution: {integrity: sha512-u5U8qYpBCpN13BsiEB0CbR1Hhh4Gc0zLFuedrHJKMctHCHAGrMdG0PRM/KErzAL3CU6/eckEtmHNB3x6e3c0vA==}
     engines: {node: ^10 || ^12 || >=14}
@@ -761,6 +796,10 @@ packages:
     dependencies:
       lru-cache: 6.0.0
     dev: true
+
+  /shvl/3.0.0:
+    resolution: {integrity: sha512-5IomAM3ykE/g9K9L6lhODc+TpCuN03rrhlboegeKyyfh66DDdpRD5JN37DYhNHH+RaYjiIDx64K/Ms/xQYOR5w==}
+    dev: false
 
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
