@@ -1,5 +1,6 @@
 export default {
   plugins: {
+    tailwindcss: {},
     autoprefixer: [
       '> 1%',
       'last 5 versions',
