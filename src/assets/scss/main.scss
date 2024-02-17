@@ -1,0 +1,14 @@
+@use "./variarbles";
+
+html,
+body,
+#app,
+.poster-layout,
+.poster-content {
+  @apply h-full overflow-hidden;
+}
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
