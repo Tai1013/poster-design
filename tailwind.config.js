@@ -17,7 +17,8 @@ export default {
   theme: {
     colors: {
       ...colors,
-      'primary': {
+      black: '#303133',
+      primary: {
         '50': '#f0fdfc',
         '100': '#cef9f6',
         '200': '#9cf3ee',
